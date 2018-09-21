@@ -1,8 +1,13 @@
 {
   "name": "mobx-reactive-forms",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Mobx implementation of angular reactive forms",
-  "keywords": ["mobx", "react", "angular", "reactive forms"],
+  "keywords": [
+    "mobx",
+    "react",
+    "angular",
+    "reactive forms"
+  ],
   "main": "dist/mobx-reactive-forms.umd.js",
   "module": "dist/mobx-reactive-forms.es5.js",
   "typings": "dist/types/mobx-reactive-forms.d.ts",
