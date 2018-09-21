@@ -13,6 +13,7 @@ export const connectForm = <IOriginalProps extends {}>
   return class FormConnector extends React.Component<resultProps> {
     public childProps: IControlValueAccessor
     public propagateChange = (value: any) => {
+      this.props.formControl.markAsDirty()
       this.props.formControl.setValue(value)
     }
     public propagateTouch = () => {
