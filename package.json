@@ -1,8 +1,8 @@
 {
   "name": "mobx-reactive-forms",
-  "version": "0.0.0",
-  "description": "",
-  "keywords": [],
+  "version": "0.0.1",
+  "description": "Mobx implementation of angular reactive forms",
+  "keywords": ["mobx", "react", "angular", "reactive forms"],
   "main": "dist/mobx-reactive-forms.umd.js",
   "module": "dist/mobx-reactive-forms.es5.js",
   "typings": "dist/types/mobx-reactive-forms.d.ts",
@@ -12,7 +12,7 @@
   "author": "Roman <rmakarov94@gmail.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/makarov-roman/mobx-reactive-forms"
   },
   "license": "MIT",
   "engines": {
