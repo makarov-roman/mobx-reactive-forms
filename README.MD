@@ -1,6 +1,7 @@
  # Mobx Reactive Forms [![Build Status](https://travis-ci.org/makarov-roman/mobx-reactive-forms.svg?branch=master)](https://travis-ci.org/makarov-roman/mobx-reactive-forms)
  
  _Implementation of Angular Reactive forms for mobx applications_
+ [API Reference](https://makarov-roman.github.io/mobx-reactive-forms/index.html)
  
  # Installation 
  `npm i mobx-reactive-forms`
