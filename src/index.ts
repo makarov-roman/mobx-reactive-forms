@@ -214,6 +214,7 @@ export abstract class AbstractControl {
     } else {
       this.errors[error.code] = true
     }
+    this._updateStatus()
   }
 
   /**
@@ -224,9 +225,13 @@ export abstract class AbstractControl {
    */
   @action
   public removeError(error: IValidationError) {
-    if (this.errors && this.errors[error.code]) {
+    if (!this.errors && !this.errors[error.code]) return
+    if (Object.keys(this.errors).length !== 1) {
       delete this.errors[error.code]
+    } else {
+      this.errors = null
     }
+    this._updateStatus()
   }
 
   /**
@@ -308,7 +313,7 @@ export abstract class AbstractControl {
     if (this.enabled) {
       const validationResult = this._runValidator()
       this.errors = validationResult ? validationResult : null
-      this.status = this._calculateStatus()
+      this._updateStatus(true)
     }
 
     if (this.parent && !onlySelf) {
@@ -375,6 +380,15 @@ export abstract class AbstractControl {
     }
 
     return x
+  }
+
+  /** @internal */
+  _updateStatus(onlySelf?: boolean): void {
+    this.status = this._calculateStatus()
+
+    if (this.parent && !onlySelf) {
+      this.parent._updateStatus()
+    }
   }
 
   /** @internal */
