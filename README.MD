@@ -1,4 +1,4 @@
- # Mobx Reactive Forms
+ # Mobx Reactive Forms [![Build Status](https://travis-ci.org/makarov-roman/mobx-reactive-forms.svg?branch=master)](https://travis-ci.org/makarov-roman/mobx-reactive-forms)
  
  _Implementation of Angular Reactive forms for mobx applications_
  
