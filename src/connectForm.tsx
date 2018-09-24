@@ -1,9 +1,9 @@
 import * as React from 'react';
 import {IControlValueAccessor} from './ControlValueAccessor'
-import {FormControl} from './index'
+import {AbstractControl} from './index'
 
 interface IExternal {
-  formControl: FormControl
+  formControl: AbstractControl
 }
 
 type Injected = IControlValueAccessor

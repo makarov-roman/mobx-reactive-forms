@@ -1,10 +1,10 @@
-import { FormControl } from './index'
+import { AbstractControl } from './index'
 
 export interface IControlValueAccessor {
   /**
    * Form Control instance itself
    */
-  formControl: FormControl
+  formControl: AbstractControl
 
   /**
    * Registers a callback function that should be called when the control's value
