@@ -8,7 +8,7 @@
  # Usage
  
  ## IControlValueAccessor
- Everything you need to do - is to wrap your input component with connectForm HOC and pass propagateChange and propagateTouch methods
+ Everything you need to start - is to wrap your input component with connectForm HOC and pass propagateChange and propagateTouch methods
  
  ```typescript jsx
  import * as React from 'react'
