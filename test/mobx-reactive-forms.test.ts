@@ -15,7 +15,6 @@ describe('Abstract control', () => {
       const control = new FormControl('')
       control.setError({ code: NOT_EMPTY_ERROR })
       control.removeError({ code: NOT_EMPTY_ERROR })
-      console.log(control.status, control.errors)
       expect(control.valid).toBeTruthy()
     })
   })
